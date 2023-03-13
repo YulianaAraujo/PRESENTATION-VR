@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ROTOSCOPIA</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="D0" alt="inicio" src="./imagenes/inicio.jpg" />
+                <img id="D1" alt="segunda diapositiva" src="./imagenes/segunda-diapositiva.jpg" />
+                <img id="D2" alt="tercera diapositiva" src="./imagenes/tercera-diapositiva.jpg" />
+                <img id="D3" alt="cuarta diapositiva" src="./imagenes/cuarta diapositiva.jpg" />
+            </a-assets>
+            <a-image src="#D0" id="tablero" position="0 2.4 -3" width="7" height="4"></a-image>
+
+            <a-image src="#D1" position="-2 0.3 -2.8" width="1" height="0.5" onclick="show('D1')"></a-image>
+            <a-text
+                position="-2.6 0 -2.8"
+                font="mozillavr"
+                scale="0.5 0.5 0.5"
+                color="#9633FF"
+                value="Problema Comunicacion"
+                position="0 0 -3"
+            ></a-text>
+
+            <a-image src="#D2" position="0 0.3 -2.8" width="1" height="0.5" onclick="show('D2')"></a-image>
+            <a-text
+                position="-0.4 0 -2.8"
+                font="mozillavr"
+                scale="0.5 0.5 0.5"
+                color="#9633FF"
+                value="Mapa Asociativo"
+                position="0 0 -3"
+            ></a-text>
+
+            <a-image src="#D3" position="2 0.3 -2.8" width="1" height="0.5" onclick="show('D3')"></a-image>
+            <a-text
+                position="1.8 0 -2.8"
+                font="mozillavr"
+                scale="0.5 0.5 0.5"
+                color="#9633FF"
+                value="Concepto"
+                position="0 0 -3"
+            ></a-text>
+            
+            <a-text
+                align="center"
+                font="mozillavr"
+                scale="0.5 0.5 0.5"
+                color="#9633FF"
+                value="Yuliana Bacca - Dana Ipuz, Alejandra Pena, Mauricio, Santiago Casadiegos"
+                position="0 0 -2.2"
+            ></a-text>
+            <a-camera>
+                <a-cursor color=#02C700></a-cursor>
+            </a-camera>
+        </a-scene>
+        <script>
+        function show(id) {
+            var valor = $("#" + id).attr("alt");
+            document.getElementById("tablero").setAttribute("src", "#" + id);
+            $("#description").attr("value", "Usted se encuentra en" + valor);
+        }
+        </script>
+    </body>
+</html>
