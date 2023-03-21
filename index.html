@@ -133,8 +133,8 @@
 
             <!-- comunication-problem -->
             <a-entity id="comunication" visible= "false">
-                <a-image src="#PC1" position="1.8 1.5 3"  rotation="0 210 0" width="4" height="2" sound="src: #simulación; on: click"></a-image>
-                <a-image src="#PC2" position="-1.8 1.5 3"  rotation="0 150 0" width="4" height="2" sound="src: #cubismo; on: click"></a-image>
+                <a-image id="pc1" src="#PC1" position="1.8 1.5 3"  rotation="0 210 0" width="4" height="2" sound="src: #simulación; on: click ; volume:0"></a-image>
+                <a-image id="pc2" src="#PC2" position="-1.8 1.5 3"  rotation="0 150 0" width="4" height="2" sound="src: #cubismo; on: click ; volume:0"></a-image>
             </a-entity>
 
             <!-- assosiativity map -->
@@ -148,21 +148,21 @@
             <!-- storyboard -->
             <a-entity id="storyboard" visible= "false">
                 <!-- arriba -->
-                <a-image id="sb1" src="#SB1" position="2 2.5 -0.6"  rotation="0 290 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB1; on: click" ></a-image>
-                <a-image id="sb2" src="#SB2" position="2.1 2.5 1.3"  rotation="0 258 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB2; on: click"></a-image> 
-                <a-image id="sb3" src="#SB3" position="0.95 2.5 2.5"  rotation="0 191 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB3; on: click"></a-image>           
-                <a-image id="sb4" src="#SB4" position="-0.95 2.5 2.5"  rotation="0 169 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB4; on: click"></a-image>    
-                <a-image id="sb5" src="#SB5" position="-2.1 2.5 1.3"  rotation="0 102 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB5; on: click"></a-image>
-                <a-image id="sb6" src="#SB6" position="-2 2.5 -0.6"  rotation="0 70 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB6; on: click"></a-image>
+                <a-image id="sb1" src="#SB1" position="2 2.5 -0.6"  rotation="0 290 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB1; on: click ; volume:0" ></a-image>
+                <a-image id="sb2" src="#SB2" position="2.1 2.5 1.3"  rotation="0 258 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB2; on: click  ; volume:0"></a-image> 
+                <a-image id="sb3" src="#SB3" position="0.95 2.5 2.5"  rotation="0 191 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB3; on: click  ; volume:0"></a-image>           
+                <a-image id="sb4" src="#SB4" position="-0.95 2.5 2.5"  rotation="0 169 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB4; on: click  ; volume:0"></a-image>    
+                <a-image id="sb5" src="#SB5" position="-2.1 2.5 1.3"  rotation="0 102 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB5; on: click  ; volume:0"></a-image>
+                <a-image id="sb6" src="#SB6" position="-2 2.5 -0.6"  rotation="0 70 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB6; on: click  ; volume:0"></a-image>
 
                 <!-- abajo -->  
-                <a-image id="sb7" src="#SB7" position="2.5 1 -0.88"  rotation="0 290 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB7; on: click"></a-image> 
-                <a-image id="sb8" src="#SB8" position="2.7 1 1"   rotation="0 260 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB8; on: click"></a-image>           
-                <a-image id="sb9" src="#SB9" position="1.8 1 2.68"   rotation="0 218 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB9; on: click"></a-image>    
-                <a-image id="sb10" src="#SB10" position="0 1 3.2"  rotation="0 180 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB10; on: click"></a-image>
-                <a-image id="sb11" src="#SB11" position="-1.8 1 2.68"  rotation="0 140 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB11; on: click"></a-image>           
-                <a-image id="sb12" src="#SB12" position="-2.7 1 1"  rotation="0 102 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB12; on: click"></a-image>  
-                <a-image id="sb13" src="#SB13" position="-2.5 1 -0.88"  rotation="0 70 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB13; on: click"></a-image>
+                <a-image id="sb7" src="#SB7" position="2.5 1 -0.88"  rotation="0 290 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB7; on: click  ; volume:0"></a-image> 
+                <a-image id="sb8" src="#SB8" position="2.7 1 1"   rotation="0 260 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB8; on: click  ; volume:0"></a-image>           
+                <a-image id="sb9" src="#SB9" position="1.8 1 2.68"   rotation="0 218 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB9; on: click  ; volume:0"></a-image>    
+                <a-image id="sb10" src="#SB10" position="0 1 3.2"  rotation="0 180 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB10; on: click  ; volume:0"></a-image>
+                <a-image id="sb11" src="#SB11" position="-1.8 1 2.68"  rotation="0 140 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB11; on: click  ; volume:0"></a-image>           
+                <a-image id="sb12" src="#SB12" position="-2.7 1 1"  rotation="0 102 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB12; on: click  ; volume:0"></a-image>  
+                <a-image id="sb13" src="#SB13" position="-2.5 1 -0.88"  rotation="0 70 0" width="1.8" height="1"  onmouseenter="move(id)" sound="src: #ASB13; on: click  ; volume:0"></a-image>
 
                 <a-entity id="next" visible= "true">
                     <a-sphere  src="#arrow"   scale="0.45 0.45 0.45"  radius="0.4"  rotation="345 180 0"  position="-0.5 0 3"   material="opacity: 1" onclick="next()" ></a-sphere>
@@ -212,8 +212,14 @@
                 
                 if( valor == "primera diapositiva"){
                     document.getElementById('comunication').setAttribute('visible', 'true');
+
+                    document.getElementById("pc1").setAttribute("sound", "src: #simulación; on: click  ; volume:1");
+                    document.getElementById("pc2").setAttribute("sound", "src: #cubismo; on: click  ; volume:1");
                 } else {
                     document.getElementById('comunication').setAttribute('visible', 'false');
+
+                    document.getElementById("pc1").setAttribute("sound", "src: #simulación; on: click  ; volume:0");
+                    document.getElementById("pc2").setAttribute("sound", "src: #cubismo; on: click  ; volume:0");
                 }
 
                 if( valor == "segunda diapositiva"){
@@ -224,8 +230,40 @@
 
                 if( valor == "quinta diapositiva"){
                     document.getElementById('storyboard').setAttribute('visible', 'true');
+
+                    document.getElementById("sb1").setAttribute("sound", "src: #ASB1; on: click  ; volume:1");
+                    document.getElementById("sb2").setAttribute("sound", "src: #ASB2; on: click  ; volume:1");
+                    document.getElementById("sb3").setAttribute("sound", "src: #ASB3; on: click ; volume:1");
+                    document.getElementById("sb4").setAttribute("sound", "src: #ASB4; on: click ; volume:1");
+                    document.getElementById("sb5").setAttribute("sound", "src: #ASB5; on: click ; volume:1");
+                    document.getElementById("sb6").setAttribute("sound", "src: #ASB6; on: click ; volume:1");
+
+                    document.getElementById("sb7").setAttribute("sound", "src: #ASB7; on: click ; volume:1");
+                    document.getElementById("sb8").setAttribute("sound", "src: #ASB8; on: click ; volume:1");
+                    document.getElementById("sb9").setAttribute("sound", "src: #ASB9; on: click ; volume:1");
+                    document.getElementById("sb10").setAttribute("sound", "src: #ASB10; on: click ; volume:1");
+                    document.getElementById("sb11").setAttribute("sound", "src: #ASB11; on: click ; volume:1");
+                    document.getElementById("sb12").setAttribute("sound", "src: #ASB12; on: click ; volume:1");
+                    document.getElementById("sb13").setAttribute("sound", "src: #ASB13; on: click ; volume:1");
+
                 } else {
                     document.getElementById('storyboard').setAttribute('visible', 'false');
+
+                    document.getElementById("sb1").setAttribute("sound", "src: #ASB1; on: click  ; volume:0");
+                    document.getElementById("sb2").setAttribute("sound", "src: #ASB2; on: click  ; volume:0");
+                    document.getElementById("sb3").setAttribute("sound", "src: #ASB3; on: click ; volume:0");
+                    document.getElementById("sb4").setAttribute("sound", "src: #ASB4; on: click ; volume:0");
+                    document.getElementById("sb5").setAttribute("sound", "src: #ASB5; on: click ; volume:0");
+                    document.getElementById("sb6").setAttribute("sound", "src: #ASB6; on: click ; volume:0");
+
+                    document.getElementById("sb7").setAttribute("sound", "src: #ASB7; on: click ; volume:0");
+                    document.getElementById("sb8").setAttribute("sound", "src: #ASB8; on: click ; volume:0");
+                    document.getElementById("sb9").setAttribute("sound", "src: #ASB9; on: click ; volume:0");
+                    document.getElementById("sb10").setAttribute("sound", "src: #ASB10; on: click ; volume:0");
+                    document.getElementById("sb11").setAttribute("sound", "src: #ASB11; on: click ; volume:0");
+                    document.getElementById("sb12").setAttribute("sound", "src: #ASB12; on: click ; volume:0");
+                    document.getElementById("sb13").setAttribute("sound", "src: #ASB13; on: click ; volume:0");
+
                 }
             }
 
@@ -247,20 +285,20 @@
                 document.getElementById("sb13").setAttribute("src", "#SB26");
 
 
-                document.getElementById("sb1").setAttribute("sound", "src: #ASB14; on: click");
-                document.getElementById("sb2").setAttribute("sound", "src: #ASB15; on: click");
-                document.getElementById("sb3").setAttribute("sound", "src: #ASB16; on: click");
-                document.getElementById("sb4").setAttribute("sound", "src: #ASB17; on: click");
-                document.getElementById("sb5").setAttribute("sound", "src: #ASB18; on: click");
-                document.getElementById("sb6").setAttribute("sound", "src: #ASB19; on: click");
+                document.getElementById("sb1").setAttribute("sound", "src: #ASB14; on: click ; volume:1");
+                document.getElementById("sb2").setAttribute("sound", "src: #ASB15; on: click ; volume:1");
+                document.getElementById("sb3").setAttribute("sound", "src: #ASB16; on: click ; volume:1");
+                document.getElementById("sb4").setAttribute("sound", "src: #ASB17; on: click ; volume:1");
+                document.getElementById("sb5").setAttribute("sound", "src: #ASB18; on: click ; volume:1");
+                document.getElementById("sb6").setAttribute("sound", "src: #ASB19; on: click ; volume:1");
 
-                document.getElementById("sb7").setAttribute("sound", "src: #ASB20; on: click");
-                document.getElementById("sb8").setAttribute("sound", "src: #ASB21; on: click");
-                document.getElementById("sb9").setAttribute("sound", "src: #ASB22; on: click");
-                document.getElementById("sb10").setAttribute("sound", "src: #ASB23; on: click");
-                document.getElementById("sb11").setAttribute("sound", "src: #ASB24; on: click");
-                document.getElementById("sb12").setAttribute("sound", "src: #ASB25; on: click");
-                document.getElementById("sb13").setAttribute("sound", "src: #ASB26; on: click");
+                document.getElementById("sb7").setAttribute("sound", "src: #ASB20; on: click ; volume:1");
+                document.getElementById("sb8").setAttribute("sound", "src: #ASB21; on: click ; volume:1");
+                document.getElementById("sb9").setAttribute("sound", "src: #ASB22; on: click ; volume:1");
+                document.getElementById("sb10").setAttribute("sound", "src: #ASB23; on: click ; volume:1");
+                document.getElementById("sb11").setAttribute("sound", "src: #ASB24; on: click ; volume:1");
+                document.getElementById("sb12").setAttribute("sound", "src: #ASB25; on: click ; volume:1");
+                document.getElementById("sb13").setAttribute("sound", "src: #ASB26; on: click ; volume:1");
 
 
                 document.getElementById('next').setAttribute('visible', 'false');
@@ -285,20 +323,20 @@
                 document.getElementById("sb13").setAttribute("src", "#SB13");
 
 
-                document.getElementById("sb1").setAttribute("sound", "src: #ASB1; on: click");
-                document.getElementById("sb2").setAttribute("sound", "src: #ASB2; on: click");
-                document.getElementById("sb3").setAttribute("sound", "src: #ASB3; on: click");
-                document.getElementById("sb4").setAttribute("sound", "src: #ASB4; on: click");
-                document.getElementById("sb5").setAttribute("sound", "src: #ASB5; on: click");
-                document.getElementById("sb6").setAttribute("sound", "src: #ASB6; on: click");
+                document.getElementById("sb1").setAttribute("sound", "src: #ASB1; on: click ; volume:1");
+                document.getElementById("sb2").setAttribute("sound", "src: #ASB2; on: click ; volume:1");
+                document.getElementById("sb3").setAttribute("sound", "src: #ASB3; on: click ; volume:1");
+                document.getElementById("sb4").setAttribute("sound", "src: #ASB4; on: click ; volume:1");
+                document.getElementById("sb5").setAttribute("sound", "src: #ASB5; on: click ; volume:1");
+                document.getElementById("sb6").setAttribute("sound", "src: #ASB6; on: click ; volume:1");
 
-                document.getElementById("sb7").setAttribute("sound", "src: #ASB7; on: click");
-                document.getElementById("sb8").setAttribute("sound", "src: #ASB8; on: click");
-                document.getElementById("sb9").setAttribute("sound", "src: #ASB9; on: click");
-                document.getElementById("sb10").setAttribute("sound", "src: #ASB10; on: click");
-                document.getElementById("sb11").setAttribute("sound", "src: #ASB11; on: click");
-                document.getElementById("sb12").setAttribute("sound", "src: #ASB12; on: click");
-                document.getElementById("sb13").setAttribute("sound", "src: #ASB13; on: click");
+                document.getElementById("sb7").setAttribute("sound", "src: #ASB7; on: click ; volume:1");
+                document.getElementById("sb8").setAttribute("sound", "src: #ASB8; on: click ; volume:1");
+                document.getElementById("sb9").setAttribute("sound", "src: #ASB9; on: click ; volume:1");
+                document.getElementById("sb10").setAttribute("sound", "src: #ASB10; on: click ; volume:1");
+                document.getElementById("sb11").setAttribute("sound", "src: #ASB11; on: click ; volume:1");
+                document.getElementById("sb12").setAttribute("sound", "src: #ASB12; on: click ; volume:1");
+                document.getElementById("sb13").setAttribute("sound", "src: #ASB13; on: click ; volume:1");
 
 
                 document.getElementById('next').setAttribute('visible', 'true');
@@ -330,45 +368,58 @@
 
             if(id == "sb1"){
                 img.setAttribute("position", "1.2 2.5 -0.6" );
+                img.components.sound.playSound();
             }
             else if(id == "sb2"){
                 img.setAttribute("position", "1.3 2.5 1.3" );
+                img.components.sound.playSound();
             }
             else if(id == "sb3"){
                 img.setAttribute("position", "0.95 2.5 1.7" );
+                img.components.sound.playSound();
             }
             else if(id == "sb4"){
                 img.setAttribute("position", "-0.95 2.5 1.7" );
+                img.components.sound.playSound();
             }
             else if(id == "sb5"){
                 img.setAttribute("position", "-1.3 2.5 1.3" );
+                img.components.sound.playSound();
             }
             else if(id == "sb6"){
                 img.setAttribute("position", "-1.2 2.5 -0.6" );
+                img.components.sound.playSound();
             }
             else if(id == "sb7"){
                 img.setAttribute("position", "1.7 1 -0.88" );
+                img.components.sound.playSound();
             }
             else if(id == "sb8"){
                 img.setAttribute("position", "1.9 1 1" );
+                img.components.sound.playSound();
             }
             else if(id == "sb9"){
                 img.setAttribute("position", "1.8 1 1.88" );
+                img.components.sound.playSound();
             }
             else if(id == "sb10"){
                 img.setAttribute("position", "0 1 2.4" );
+                img.components.sound.playSound();
             }
             else if(id == "sb11"){
                 img.setAttribute("position", "-1.8 1 1.88" );
+                img.components.sound.playSound();
             }
             else if(id == "sb12"){
                 img.setAttribute("position", "-1.9 1 1" );
+                img.components.sound.playSound();
             }
             else if(id == "sb13"){
                 img.setAttribute("position", "-1.7 1 -0.88" );
+                img.components.sound.playSound();
             }
 
-            img.components.sound.playSound();
+            
 
             img.addEventListener("mouseleave", function () {
                 img.setAttribute("scale", { x: 1, y: 1, z: 1 });
